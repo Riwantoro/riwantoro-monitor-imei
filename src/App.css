@@ -1,0 +1,66 @@
+.App {
+  font-family: 'Poppins', sans-serif; /* Updated to Poppins */
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App-header {
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-mode-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Updated to Poppins */
+}
+
+.toggle-mode-btn:hover {
+  background-color: #0056b3;
+}
+
+.App-footer {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+.dark-mode .App {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .App-header {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode .App-footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode .toggle-mode-btn {
+  background-color: #0056b3;
+}
+
+.dark-mode .toggle-mode-btn:hover {
+  background-color: #003d80;
+}

@@ -1,0 +1,53 @@
+/* Reset CSS untuk menghilangkan margin/padding default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gaya body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Gaya Header */
+.header {
+  background-color: #3498db; /* Warna biru untuk tema header */
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut di bawah header */
+}
+
+.header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem; /* Jarak antara logo dan teks */
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 1.25rem; /* Ukuran font yang lebih kecil di layar kecil */
+  }
+}
